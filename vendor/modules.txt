@@ -20,7 +20,12 @@ github.com/MindTickle/governance-utility/logger
 github.com/MindTickle/infracommon/constant/infraconstant
 # github.com/MindTickle/storageprotos v1.0.72
 ## explicit; go 1.15
+github.com/MindTickle/storageprotos/pb/common
+github.com/MindTickle/storageprotos/pb/tickleDb
 github.com/MindTickle/storageprotos/pb/tickleDbSqlStore
+# github.com/MindTickle/tickledb-data-automation v1.1.8
+## explicit; go 1.14
+github.com/MindTickle/tickledb-data-automation
 # github.com/avast/retry-go v2.7.0+incompatible
 ## explicit
 github.com/avast/retry-go

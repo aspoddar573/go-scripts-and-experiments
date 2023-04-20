@@ -1,0 +1,7 @@
+V1__create_namespace.go -- creating 'templates' namespace
+V2__create_table.go -- creating 'template_creator' table
+V3__create_table.go -- creating 'template' table
+V4__create_table.go -- creating 'template_accessibility' table
+V5__create_table.go -- creating 'template_category' table
+V6__create_table.go -- creating 'template_to_category_mapping' table
+V7__update_table.go -- adding 'template_details' column to template table

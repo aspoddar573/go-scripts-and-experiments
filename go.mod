@@ -6,6 +6,7 @@ require (
 	github.com/MindTickle/governance-protos v1.1.0
 	github.com/MindTickle/governance-utility v0.0.57
 	github.com/MindTickle/storageprotos v1.0.72
+	github.com/MindTickle/tickledb-data-automation v1.1.8
 	github.com/avast/retry-go v2.7.0+incompatible
 	github.com/golang/protobuf v1.5.2
 	github.com/stretchr/testify v1.7.0 // indirect
