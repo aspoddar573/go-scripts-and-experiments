@@ -233,3 +233,14 @@ func IntToBool(number int) bool {
 		return true
 	}
 }
+
+/**
+This function will convert decimal string to hex string.
+*/
+func DecimalStrToHexStrWithoutError(str string) string {
+	res, err := strconv.ParseInt(str, 10, 64)
+	if err == nil {
+		return fmt.Sprintf("%x", res)
+	}
+	return ""
+}

@@ -15,8 +15,23 @@ const (
 	REQ_ID              string = "reqId"
 	SESSION_KEY         string = "session_key"
 	CONTEXT_TYPE        string = "context_type"
+	ENV_VAR_TRACK       string = "TRACK"
+	DATADOG_APM_ENABLED string = "DATADOG_APM_ENABLED"
 )
 
 const (
 	DEFAULT_AUTHORIZER_ID = "MT_ADMIN"
+)
+
+type WorkflowJobType string
+
+const (
+	CERTIFICATION_BULK_AWARD_CERTIFICATE       WorkflowJobType = "BulkAwardCertificate"
+	CERTIFICATION_BULK_RESCIND_CERTIFICATE     WorkflowJobType = "BulkRescindCertificate"
+	CERTIFICATION_EXPIRE_CERTIFICATE           WorkflowJobType = "ExpireCertificate"
+	CERTIFICATION_DEACTIVATE_CERTIFICATIONS    WorkflowJobType = "DeactivateCertifications"
+	CERTIFICATION_END_RECERTIFICATION_PERIOD   WorkflowJobType = "EndRecertificationPeriod"
+	CERTIFICATION_START_RECERTIFICATION_PERIOD WorkflowJobType = "StartRecertificationPeriod"
+	PUBLISH_CERTIFICATE_TEMPLATE               WorkflowJobType = "PublishCertificateTemplate"
+	CREATE_MODULE_FROM_TEMPLATE                WorkflowJobType = "CreateModuleFromTemplate"
 )

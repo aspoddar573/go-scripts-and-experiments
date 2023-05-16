@@ -2,7 +2,7 @@ package main
 
 import (
 	"fmt"
-	"goProject/mindtickle/parrotScripts"
+	"goScriptsAndExperiments/mindtickle/parrotScripts"
 )
 
 func main() {
