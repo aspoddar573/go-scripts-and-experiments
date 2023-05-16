@@ -25,7 +25,7 @@ func FetchAllCompaniesForTrack(track string) ([]CompanyObject, error) {
 	targetSqlStoreClient := sqlClient.GetTickleDBClient(track)
 
 	searchRes, err := targetSqlStoreClient.Search(ctx, &tickleDbSqlStore.SearchRequest{
-		RequestContext: utils.GetRequestContext(1, track, NAMESPACE),
+		RequestContext: utils.GetRequestContext(0, track, NAMESPACE),
 		SqlStatement:   "SELECT ci.company_id as company_id FROM company_info ci where (ci.company_type != 'DELETED')",
 	})
 	if err != nil {
