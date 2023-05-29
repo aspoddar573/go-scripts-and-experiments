@@ -1,6 +1,12 @@
 package main
 
-import "goScriptsAndExperiments/mindtickleScripts/randomScripts/updateTableWithNewMedia"
+import (
+	"context"
+	"fmt"
+	"github.com/MindTickle/storageprotos/pb/tickleDbSqlStore"
+	"goScriptsAndExperiments/mindtickleScripts/templates/programTemplates-v1.0/sqlClient"
+	"goScriptsAndExperiments/mindtickleScripts/templates/utils"
+)
 
 // 1679553590166624000
 // 1679554169649215000
@@ -13,15 +19,23 @@ type TemplateCategory struct {
 	DisplayOrder int64 `json:"display_order,omitempty,int"`
 }
 
+type Template struct {
+	ViewCount int64 `json:"view_count,omitempty,int"`
+}
+
 func main() {
-	//ctx := context.Background()
-	//targetEnv := "integration"
-	//targetSqlStoreClient := sqlClient.GetTickleDBClient(targetEnv)
+	ctx := context.Background()
+	targetEnv := "prod"
+	targetSqlStoreClient := sqlClient.GetTickleDBClient(targetEnv)
 
 	//searchRes, err := targetSqlStoreClient.Search(ctx, &tickleDbSqlStore.SearchRequest{
 	//	RequestContext: utils.GetRequestContext(1, targetEnv, "templates"),
-	//	SqlStatement:   "select * from template_creator",
+	//	SqlStatement:   "select * from template",
 	//})
+	//if err != nil {
+	//	fmt.Println(err)
+	//	return
+	//}
 	//fmt.Println(searchRes)
 
 	// Default template org id: 1583043504811348643
@@ -64,16 +78,18 @@ func main() {
 	//}
 	//fmt.Println(updateRes)
 
-	//execRes, err := targetSqlStoreClient.Exec(ctx, &tickleDbSqlStore.ExecRequest{
-	//	RequestContext: utils.GetRequestContext(1, targetEnv, "templates"),
-	//	SqlStatements:  []string{"DELETE FROM template_creator as tc WHERE tc.id='1679553590166624000'"},
-	//})
-	//if err != nil {
-	//	fmt.Println(err)
-	//}
-	//fmt.Println(execRes)
+	//staging: 1646473740207779828
+	//prod: 1526086301659646176
+	execRes, err := targetSqlStoreClient.Exec(ctx, &tickleDbSqlStore.ExecRequest{
+		RequestContext: utils.GetRequestContext(1526086301659646176, targetEnv, "templates"),
+		SqlStatements:  []string{"UPDATE template as tmp SET tmp.scope='RESTRICTED' where tmp.id in ('1418224246089186528', '1418224246089186527')"},
+	})
+	if err != nil {
+		fmt.Println(err)
+	}
+	fmt.Println(execRes)
 
 	//dummyPackage.TriggerAWorkflow()
 
-	updateTableWithNewMedia.UpdateThumbnailData()
+	//updateTableWithNewMedia.UpdateThumbnailData()
 }
