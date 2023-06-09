@@ -69,7 +69,7 @@ func CorrectCorruptedDataForAllCompanies() error {
 	for idx, corruptedSeriesObj := range corruptedSeriesData {
 		fmt.Printf("Correcting info for company: %s and series: %s at pos %d of %d\n", corruptedSeriesObj.CompanyId, corruptedSeriesObj.SeriesId, idx+1, len(corruptedSeriesData))
 		correctionResponse, err := CorrectDisplayOrderCorruption(corruptedSeriesObj.CompanyId, corruptedSeriesObj.SeriesId)
-		if err != nil {
+		if err != nil || correctionResponse == nil || correctionResponse.StatusCode == 500 {
 			fmt.Printf("Error occurred in correction for series: %s: %+v\n", corruptedSeriesObj.SeriesId, err)
 		} else {
 			fmt.Printf("Data corrected for series: %s with response %+v\n", corruptedSeriesObj.SeriesId, correctionResponse)
