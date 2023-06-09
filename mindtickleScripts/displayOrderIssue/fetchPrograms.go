@@ -27,14 +27,15 @@ func AddSeriesDataForCompany(companyId string) error {
 	}
 	db := localSqlClient.GetSqlClient(LocalSchema)
 
+	fmt.Printf("Inserting %d entries for company %s\n", len(allPrograms.Data), companyId)
 	for _, program := range allPrograms.Data {
 		_, err = db.Exec("INSERT INTO series_display_order_status(company_id, series_id, track) VALUES(?, ?, ?)", companyId, program.Id, TRACK)
 		if err != nil {
 			fmt.Printf("Failed to inserted %s, %s and %s\n", companyId, program.Id, TRACK)
 			return err
 		}
-		fmt.Printf("Successfully inserted %s, %s and %s\n", companyId, program.Id, TRACK)
 	}
+	fmt.Printf("Successfully inserted %d entries for company %s.\n", len(allPrograms.Data), companyId)
 
 	_, err = db.Exec("UPDATE customer_company_info_table SET is_processed=1 where company_id = ? and track = ?", companyId, TRACK)
 	if err != nil {
@@ -42,13 +43,14 @@ func AddSeriesDataForCompany(companyId string) error {
 		return err
 	}
 
+	defer db.Close()
 	return nil
 }
 
 func AddSeriesDataForCompanies(companyIds []string) error {
 
-	for _, companyId := range companyIds {
-		fmt.Printf("Adding series data for company: %s\n", companyId)
+	for idx, companyId := range companyIds {
+		fmt.Printf("Adding series data for company: %s at pos %d of %d\n", companyId, idx+1, len(companyIds))
 		err := AddSeriesDataForCompany(companyId)
 		if err != nil {
 			return err

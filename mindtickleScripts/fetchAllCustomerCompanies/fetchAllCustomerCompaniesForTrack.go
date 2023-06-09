@@ -78,6 +78,11 @@ func UpdateCompanyInfoInTable(TRACK string) error {
 	}
 	fmt.Printf("Fetched %d number of companies!\n", len(allCompanyData))
 
+	allCompanyData = []CompanyObject{
+		{
+			"1637750180696113722",
+		},
+	}
 	db := localSqlClient.GetSqlClient(LocalSchema)
 
 	for _, val := range allCompanyData {
@@ -95,7 +100,7 @@ func FetchAllUnprocessedCompanies(TRACK string) ([]string, error) {
 	var allUnprocessedCompanies []string
 
 	db := localSqlClient.GetSqlClient(LocalSchema)
-	rows, err := db.Query("SELECT company_id FROM customer_company_info_table WHERE track = ? and is_processed = 0", TRACK)
+	rows, err := db.Query("SELECT company_id FROM customer_company_info_table WHERE track = ? and is_processed = 0 order by company_id desc", TRACK)
 	if err != nil {
 		return nil, err
 	}
