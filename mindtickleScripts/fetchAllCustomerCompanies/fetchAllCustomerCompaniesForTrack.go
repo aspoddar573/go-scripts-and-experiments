@@ -118,3 +118,26 @@ func FetchAllUnprocessedCompanies(TRACK string) ([]string, error) {
 	}
 	return allUnprocessedCompanies, nil
 }
+
+func FetchAllUnprocessedSeriesCompanies(TRACK string) ([]string, error) {
+	var allUnprocessedCompanies []string
+
+	db := localSqlClient.GetSqlClient(LocalSchema)
+	rows, err := db.Query("SELECT distinct(company_id) FROM series_display_order_status WHERE track = ? and is_processed = 0 order by company_id desc", TRACK)
+	if err != nil {
+		return nil, err
+	}
+	defer rows.Close()
+
+	for rows.Next() {
+		var company_id string
+		if err := rows.Scan(&company_id); err != nil {
+			return allUnprocessedCompanies, err
+		}
+		allUnprocessedCompanies = append(allUnprocessedCompanies, company_id)
+	}
+	if err = rows.Err(); err != nil {
+		return allUnprocessedCompanies, err
+	}
+	return allUnprocessedCompanies, nil
+}

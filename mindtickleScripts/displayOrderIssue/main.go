@@ -7,10 +7,6 @@ import (
 
 const TRACK = "integration"
 
-func AddCompanyData() {
-
-}
-
 func AddSeriesData() {
 	allUnprocessedCompanies, err := fetchAllCustomerCompanies.FetchAllUnprocessedCompanies(TRACK)
 	if err != nil {
@@ -26,7 +22,7 @@ func AddSeriesData() {
 }
 
 func AddCorruptionData() {
-	allUnprocessedCompanies, err := fetchAllCustomerCompanies.FetchAllUnprocessedCompanies(TRACK)
+	allUnprocessedCompanies, err := fetchAllCustomerCompanies.FetchAllUnprocessedSeriesCompanies(TRACK)
 	if err != nil {
 		fmt.Println(err)
 		return
@@ -39,15 +35,15 @@ func AddCorruptionData() {
 	}
 }
 
-func EnhanceCorruptionDataCorruptedSeries() {
-	err := EnhanceCorruptionDataForAllCompanies()
+func CorrectDataForAllCompanies() {
+	err := CorrectCorruptedDataForAllCompanies()
 	if err != nil {
 		return
 	}
 }
 
 func main() {
-	//AddSeriesData()
-	//AddCorruptionData()
-	//EnhanceCorruptionDataCorruptedSeries()
+	AddSeriesData()
+	AddCorruptionData()
+	CorrectDataForAllCompanies()
 }

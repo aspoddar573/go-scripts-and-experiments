@@ -15,6 +15,15 @@ func CheckDisplayOrderCorruption(companyId string, seriesId string) (*localDashb
 	return corruptionInfo, err
 }
 
+func CorrectDisplayOrderCorruption(companyId string, seriesId string) (*localDashboardApi.CheckDisplayOrderCorruptionForProgramResponse, error) {
+	dashboardApiClient := localDashboardApi.GetDashboardApiClient()
+	correctionResponse, err := dashboardApiClient.CorrectDisplayOrderCorruptionForProgram(&localDashboardApi.CheckDisplayOrderCorruptionForProgramRequest{
+		CompanyId: companyId,
+		SeriesId:  seriesId,
+	})
+	return correctionResponse, err
+}
+
 func AddCorruptionDataForSeries(companyId string, seriesId string) error {
 	corruptionInfo, err := CheckDisplayOrderCorruption(companyId, seriesId)
 	if err != nil {
@@ -91,80 +100,6 @@ func AddCorruptionDataForAllCompanies(allUnprocessedCompanies []string) error {
 		_, err = db.Exec("UPDATE customer_company_info_table SET is_processed=1 where company_id = ? and track = ?", companyId, TRACK)
 		if err != nil {
 			fmt.Printf("Error while updating table for company: %s", companyId)
-			return err
-		}
-	}
-
-	defer db.Close()
-	return nil
-}
-
-type CorruptedSeriesData struct {
-	CompanyId string
-	SeriesId  string
-}
-
-func FetchAllCorruptedSeriesForTrack() ([]CorruptedSeriesData, error) {
-	var corruptedSeriesData []CorruptedSeriesData
-
-	db := localSqlClient.GetSqlClient(LocalSchema)
-	rows, err := db.Query("SELECT company_id, series_id FROM corrupted_series_display_order_data WHERE is_processed = 0 AND track = ?", TRACK)
-	if err != nil {
-		return nil, err
-	}
-	defer rows.Close()
-
-	for rows.Next() {
-		var series_id string
-		var company_id string
-		if err := rows.Scan(&company_id, &series_id); err != nil {
-			return corruptedSeriesData, err
-		}
-		corruptedSeriesData = append(corruptedSeriesData, CorruptedSeriesData{
-			CompanyId: company_id,
-			SeriesId:  series_id,
-		})
-	}
-	if err = rows.Err(); err != nil {
-		return corruptedSeriesData, err
-	}
-
-	defer db.Close()
-	return corruptedSeriesData, nil
-}
-
-func EnhanceCorruptionDataForSeries(companyId string, seriesId string) error {
-	corruptionInfo, err := CheckDisplayOrderCorruption(companyId, seriesId)
-	if err != nil {
-		fmt.Printf("Error occurred: %+v\n", err)
-		return err
-	}
-	fmt.Println(corruptionInfo)
-	db := localSqlClient.GetSqlClient(LocalSchema)
-
-	_, err = db.Exec("UPDATE corrupted_series_display_order_data SET status = ?, message = ?, is_processed = 1 where company_id = ? and series_id = ?", corruptionInfo.StatusCode, corruptionInfo.ErrorMessage, companyId, seriesId)
-	if err != nil {
-		fmt.Printf("Failed to update info for series %s\n", seriesId)
-		return err
-	}
-
-	defer db.Close()
-	return nil
-}
-
-func EnhanceCorruptionDataForAllCompanies() error {
-	db := localSqlClient.GetSqlClient(LocalSchema)
-
-	corruptedSeriesData, err := FetchAllCorruptedSeriesForTrack()
-	if err != nil {
-		fmt.Printf("Error while fetching corrupted series data: %+v\n", err)
-		return err
-	}
-	for idx, corruptedSeriesObj := range corruptedSeriesData {
-		fmt.Printf("Adding data for company: %s and series: %s at pos %d of %d\n", corruptedSeriesObj.CompanyId, corruptedSeriesObj.SeriesId, idx+1, len(corruptedSeriesData))
-		err := EnhanceCorruptionDataForSeries(corruptedSeriesObj.CompanyId, corruptedSeriesObj.SeriesId)
-		if err != nil {
-			fmt.Printf("error occurred at EnhanceCorruptionDataForSeries for company: %s and series: %s\n", corruptedSeriesObj.CompanyId, corruptedSeriesObj.SeriesId)
 			return err
 		}
 	}

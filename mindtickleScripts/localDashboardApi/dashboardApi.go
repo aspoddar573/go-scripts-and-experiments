@@ -95,3 +95,37 @@ func (client DashboardApiClientImpl) CheckDisplayOrderCorruptionForProgram(req *
 	}
 	return &responseObject, nil
 }
+
+func (client DashboardApiClientImpl) CorrectDisplayOrderCorruptionForProgram(req *CheckDisplayOrderCorruptionForProgramRequest) (*CheckDisplayOrderCorruptionForProgramResponse, error) {
+	ctx := context.Background()
+
+	jsonBytes, err := json.Marshal(req)
+	postReq, err := http.NewRequestWithContext(ctx, http.MethodPost, client.url+"/api/v2/webhook/dashboard/correctCorruptDisplayOrders", bytes.NewBuffer(jsonBytes))
+	postReq.Header.Set("Content-Type", "application/json")
+	postReq.Header.Set("x-token", "localkey")
+	postReq.Header.Set("cname", req.CompanyId)
+	postReq.Header.Set("user", "abcd")
+	postReq.Header.Set("workflow-id", "abcd")
+	postReq.Header.Set("domain-base", "abcd")
+
+	resp, err := http.DefaultClient.Do(postReq)
+	if err != nil {
+		fmt.Printf("Fetched all Programs for company: %d\n", req.CompanyId)
+		return nil, err
+	}
+	defer resp.Body.Close()
+
+	res, err := ioutil.ReadAll(resp.Body)
+	if err != nil {
+		fmt.Printf("Error while reading response body: %+v\n", err)
+		return nil, err
+	}
+	var responseObject = CheckDisplayOrderCorruptionForProgramResponse{}
+
+	err = json.Unmarshal(res, &responseObject)
+	if err != nil {
+		Logger.WithTag("error", err).Errorf(ctx, "Error while unmarshalling response object")
+		return nil, err
+	}
+	return &responseObject, nil
+}
