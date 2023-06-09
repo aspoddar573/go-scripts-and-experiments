@@ -5,11 +5,14 @@ go 1.17
 require (
 	github.com/MindTickle/governance-protos v1.4.7
 	github.com/MindTickle/governance-utility v0.0.74
+	github.com/MindTickle/mt-go-logger v1.0.7
 	github.com/MindTickle/storageprotos v1.0.72
 	github.com/MindTickle/tickledb-data-automation v1.1.8
 	github.com/avast/retry-go v2.7.0+incompatible
+	github.com/go-sql-driver/mysql v1.4.1
 	github.com/golang/protobuf v1.5.2
 	github.com/stretchr/testify v1.8.1 // indirect
+	gitlab.com/MindTickle/governance-utility v1.0.3
 	golang.org/x/net v0.0.0-20220412020605-290c469a71a5
 	golang.org/x/sync v0.0.0-20210220032951-036812b2e83c
 	golang.org/x/tour v0.1.0
@@ -25,7 +28,6 @@ require (
 	github.com/Microsoft/go-winio v0.5.1 // indirect
 	github.com/MindTickle/baton-rabbitmq v0.0.86 // indirect
 	github.com/MindTickle/infracommon v1.22.7 // indirect
-	github.com/MindTickle/mt-go-logger v1.0.7 // indirect
 	github.com/cespare/xxhash/v2 v2.1.2 // indirect
 	github.com/dgraph-io/ristretto v0.1.0 // indirect
 	github.com/dustin/go-humanize v1.0.0 // indirect
@@ -50,6 +52,7 @@ require (
 	golang.org/x/time v0.0.0-20211116232009-f0f3c7e86c11 // indirect
 	golang.org/x/tools v0.1.5 // indirect
 	golang.org/x/xerrors v0.0.0-20200804184101-5ec99f83aff1 // indirect
+	google.golang.org/appengine v1.4.0 // indirect
 	google.golang.org/genproto v0.0.0-20200526211855-cb27e3aa2013 // indirect
 	google.golang.org/protobuf v1.27.1 // indirect
 	gopkg.in/DataDog/dd-trace-go.v1 v1.36.0 // indirect
