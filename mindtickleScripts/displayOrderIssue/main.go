@@ -5,7 +5,7 @@ import (
 	"goScriptsAndExperiments/mindtickleScripts/fetchAllCustomerCompanies"
 )
 
-const TRACK = "integration"
+const TRACK = "staging"
 
 func AddSeriesData() {
 	allUnprocessedCompanies, err := fetchAllCustomerCompanies.FetchAllUnprocessedCompanies(TRACK)
@@ -43,7 +43,18 @@ func CorrectDataForAllCompanies() {
 }
 
 func main() {
+	fmt.Println("####################################################################################################")
+	fmt.Println("Adding series data for all companies\n\n")
 	AddSeriesData()
+	fmt.Println("####################################################################################################\n\n")
+
+	fmt.Println("####################################################################################################")
+	fmt.Println("Adding corruption data for all series\n\n")
 	AddCorruptionData()
+	fmt.Println("####################################################################################################\n\n")
+
+	fmt.Println("####################################################################################################")
+	fmt.Println("Correcting data for all corrupted series\n\n")
 	CorrectDataForAllCompanies()
+	fmt.Println("####################################################################################################\n\n")
 }

@@ -1,0 +1,31 @@
+####################################################################################################
+Adding series data for all companies
+
+
+Fetched 0 number of unprocessed companies!
+####################################################################################################
+
+
+####################################################################################################
+Adding corruption data for all series
+
+
+Fetched 0 number of unprocessed companies!
+####################################################################################################
+
+
+####################################################################################################
+Correcting data for all corrupted series
+
+
+Correcting info for company: 1453686784317271186 and series: 1455773225226559758 at pos 1 of 2
+Error occurred in correction for series: 1455773225226559758: <nil>
+Adding data for company: 1453686784317271186 and series: 1455773225226559758 at pos 1 of 2
+&{500 [NO_MODULE_DISPLAY_ORDER, DUPLICATE_MODULE_DISPLAY_ORDER]}
+Correcting info for company: 1453686784317271186 and series: 1554355546522244135 at pos 2 of 2
+Error occurred in correction for series: 1554355546522244135: <nil>
+Adding data for company: 1453686784317271186 and series: 1554355546522244135 at pos 2 of 2
+&{500 [NO_MODULE_DISPLAY_ORDER]}
+####################################################################################################
+
+
