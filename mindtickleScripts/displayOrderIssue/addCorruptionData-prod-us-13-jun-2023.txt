@@ -1,0 +1,71 @@
+####################################################################################################
+Adding series data for all companies
+
+
+Fetched 0 number of unprocessed companies!
+####################################################################################################
+
+
+####################################################################################################
+Adding corruption data for all series
+
+
+Fetched 0 number of unprocessed companies!
+####################################################################################################
+
+
+####################################################################################################
+Correcting data for all corrupted series
+
+
+Correcting info for company: 1616566272882737268 and series: 1644142329759690933 at pos 1 of 12
+Data corrected for series: 1644142329759690933 with response &{StatusCode:200 ErrorMessage:success}
+Adding data for company: 1616566272882737268 and series: 1644142329759690933 at pos 1 of 12
+&{200 []}
+Correcting info for company: 1587799176850978314 and series: 1647880967415141491 at pos 2 of 12
+Data corrected for series: 1647880967415141491 with response &{StatusCode:200 ErrorMessage:success}
+Adding data for company: 1587799176850978314 and series: 1647880967415141491 at pos 2 of 12
+&{200 []}
+Correcting info for company: 1549796195924042195 and series: 1557334501086765509 at pos 3 of 12
+Data corrected for series: 1557334501086765509 with response &{StatusCode:200 ErrorMessage:success}
+Adding data for company: 1549796195924042195 and series: 1557334501086765509 at pos 3 of 12
+&{200 []}
+Correcting info for company: 1549796195924042195 and series: 1644004156488260843 at pos 4 of 12
+Data corrected for series: 1644004156488260843 with response &{StatusCode:200 ErrorMessage:success}
+Adding data for company: 1549796195924042195 and series: 1644004156488260843 at pos 4 of 12
+&{200 []}
+Correcting info for company: 1549796195924042195 and series: 1648370561434940208 at pos 5 of 12
+Data corrected for series: 1648370561434940208 with response &{StatusCode:200 ErrorMessage:success}
+Adding data for company: 1549796195924042195 and series: 1648370561434940208 at pos 5 of 12
+&{200 []}
+Correcting info for company: 1516077729180613438 and series: 1537084234317798601 at pos 6 of 12
+Data corrected for series: 1537084234317798601 with response &{StatusCode:200 ErrorMessage:success}
+Adding data for company: 1516077729180613438 and series: 1537084234317798601 at pos 6 of 12
+&{200 []}
+Correcting info for company: 1461325566668412576 and series: 1536698041979142434 at pos 7 of 12
+Data corrected for series: 1536698041979142434 with response &{StatusCode:200 ErrorMessage:success}
+Adding data for company: 1461325566668412576 and series: 1536698041979142434 at pos 7 of 12
+&{200 []}
+Correcting info for company: 1461315463744141859 and series: 1502290801574633684 at pos 8 of 12
+Data corrected for series: 1502290801574633684 with response &{StatusCode:200 ErrorMessage:success}
+Adding data for company: 1461315463744141859 and series: 1502290801574633684 at pos 8 of 12
+&{200 []}
+Correcting info for company: 1461315463744141859 and series: 1513952309551910655 at pos 9 of 12
+Data corrected for series: 1513952309551910655 with response &{StatusCode:200 ErrorMessage:success}
+Adding data for company: 1461315463744141859 and series: 1513952309551910655 at pos 9 of 12
+&{200 []}
+Correcting info for company: 1461315463744141859 and series: 1554899419498577312 at pos 10 of 12
+Data corrected for series: 1554899419498577312 with response &{StatusCode:200 ErrorMessage:success}
+Adding data for company: 1461315463744141859 and series: 1554899419498577312 at pos 10 of 12
+&{200 []}
+Correcting info for company: 1461315463744141859 and series: 1567672733266469378 at pos 11 of 12
+Data corrected for series: 1567672733266469378 with response &{StatusCode:200 ErrorMessage:success}
+Adding data for company: 1461315463744141859 and series: 1567672733266469378 at pos 11 of 12
+&{200 []}
+Correcting info for company: 1461315463744141859 and series: 1649404351049623019 at pos 12 of 12
+Data corrected for series: 1649404351049623019 with response &{StatusCode:200 ErrorMessage:success}
+Adding data for company: 1461315463744141859 and series: 1649404351049623019 at pos 12 of 12
+&{200 []}
+####################################################################################################
+
+

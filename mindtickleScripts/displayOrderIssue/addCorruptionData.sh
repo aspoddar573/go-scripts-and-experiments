@@ -1,3 +1,3 @@
 #!/usr/bin/env bash
 
-go run . >> addCorruptionData-staging.txt
+go run . >> addCorruptionData-prod-us-13-jun-2023.txt

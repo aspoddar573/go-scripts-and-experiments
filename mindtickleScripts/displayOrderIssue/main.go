@@ -5,7 +5,7 @@ import (
 	"goScriptsAndExperiments/mindtickleScripts/fetchAllCustomerCompanies"
 )
 
-const TRACK = "staging"
+const TRACK = "prod-us"
 
 func AddSeriesData() {
 	allUnprocessedCompanies, err := fetchAllCustomerCompanies.FetchAllUnprocessedCompanies(TRACK)

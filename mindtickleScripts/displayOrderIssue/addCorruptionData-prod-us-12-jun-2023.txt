@@ -1,0 +1,286 @@
+####################################################################################################
+Adding series data for all companies
+
+
+Fetched 13 number of unprocessed companies!
+Adding series data for company: 1620159079483574562 at pos 1 of 13
+Fetched 0 number of programs for company 1620159079483574562
+Inserting 0 entries for company 1620159079483574562
+Successfully inserted 0 entries for company 1620159079483574562.
+Adding series data for company: 1616566272882737268 at pos 2 of 13
+Fetched 19 number of programs for company 1616566272882737268
+Inserting 19 entries for company 1616566272882737268
+Successfully inserted 19 entries for company 1616566272882737268.
+Adding series data for company: 1587799176850978314 at pos 3 of 13
+Fetched 19 number of programs for company 1587799176850978314
+Inserting 19 entries for company 1587799176850978314
+Successfully inserted 19 entries for company 1587799176850978314.
+Adding series data for company: 1549796195924042195 at pos 4 of 13
+Fetched 80 number of programs for company 1549796195924042195
+Inserting 80 entries for company 1549796195924042195
+Successfully inserted 80 entries for company 1549796195924042195.
+Adding series data for company: 1534455392454902653 at pos 5 of 13
+Fetched 0 number of programs for company 1534455392454902653
+Inserting 0 entries for company 1534455392454902653
+Successfully inserted 0 entries for company 1534455392454902653.
+Adding series data for company: 1526268671526855454 at pos 6 of 13
+Fetched 0 number of programs for company 1526268671526855454
+Inserting 0 entries for company 1526268671526855454
+Successfully inserted 0 entries for company 1526268671526855454.
+Adding series data for company: 1516077729180613438 at pos 7 of 13
+Fetched 27 number of programs for company 1516077729180613438
+Inserting 27 entries for company 1516077729180613438
+Successfully inserted 27 entries for company 1516077729180613438.
+Adding series data for company: 1504174750821584816 at pos 8 of 13
+Fetched 0 number of programs for company 1504174750821584816
+Inserting 0 entries for company 1504174750821584816
+Successfully inserted 0 entries for company 1504174750821584816.
+Adding series data for company: 1503462971944383320 at pos 9 of 13
+Fetched 0 number of programs for company 1503462971944383320
+Inserting 0 entries for company 1503462971944383320
+Successfully inserted 0 entries for company 1503462971944383320.
+Adding series data for company: 1461325566668412576 at pos 10 of 13
+Fetched 38 number of programs for company 1461325566668412576
+Inserting 38 entries for company 1461325566668412576
+Successfully inserted 38 entries for company 1461325566668412576.
+Adding series data for company: 1461315463744141859 at pos 11 of 13
+Fetched 29 number of programs for company 1461315463744141859
+Inserting 29 entries for company 1461315463744141859
+Successfully inserted 29 entries for company 1461315463744141859.
+Adding series data for company: 1461277535088624924 at pos 12 of 13
+Fetched 0 number of programs for company 1461277535088624924
+Inserting 0 entries for company 1461277535088624924
+Successfully inserted 0 entries for company 1461277535088624924.
+Adding series data for company: 1461275482033171736 at pos 13 of 13
+Fetched 0 number of programs for company 1461275482033171736
+Inserting 0 entries for company 1461275482033171736
+Successfully inserted 0 entries for company 1461275482033171736.
+####################################################################################################
+
+
+####################################################################################################
+Adding corruption data for all series
+
+
+Fetched 6 number of unprocessed companies!
+Adding data for company: 1616566272882737268 at pos 1 of 6
+Adding data for series: 1616605312879018836 at pos 1 of 19
+Adding data for series: 1623453210882168868 at pos 2 of 19
+Adding data for series: 1623453349074284169 at pos 3 of 19
+Adding data for series: 1623453793138114343 at pos 4 of 19
+Adding data for series: 1623454007993525850 at pos 5 of 19
+Adding data for series: 1628068767082167765 at pos 6 of 19
+Adding data for series: 1628431738887841807 at pos 7 of 19
+Adding data for series: 1628431914763272988 at pos 8 of 19
+Adding data for series: 1628431957619947215 at pos 9 of 19
+Adding data for series: 1628431976147968034 at pos 10 of 19
+Adding data for series: 1628432043121869879 at pos 11 of 19
+Adding data for series: 1630992036796175858 at pos 12 of 19
+Adding data for series: 1630993711215923433 at pos 13 of 19
+Adding data for series: 1638014100179577327 at pos 14 of 19
+Adding data for series: 1638215173026732259 at pos 15 of 19
+Adding data for series: 1638603667638741750 at pos 16 of 19
+Adding data for series: 1644142329759690933 at pos 17 of 19
+Adding data for series: 1666090055763910940 at pos 18 of 19
+Adding data for series: 1668274422963830239 at pos 19 of 19
+Adding data for company: 1587799176850978314 at pos 2 of 6
+Adding data for series: 1593701138408061885 at pos 1 of 19
+Adding data for series: 1608771151312751145 at pos 2 of 19
+Adding data for series: 1614925456257731542 at pos 3 of 19
+Adding data for series: 1618135969946208382 at pos 4 of 19
+Adding data for series: 1630408295194950364 at pos 5 of 19
+Adding data for series: 1631403380319892601 at pos 6 of 19
+Adding data for series: 1633180729625586591 at pos 7 of 19
+Adding data for series: 1635302456627306035 at pos 8 of 19
+Adding data for series: 1640466218237290726 at pos 9 of 19
+Adding data for series: 1646283419813371449 at pos 10 of 19
+Adding data for series: 1647880967415141491 at pos 11 of 19
+Adding data for series: 1647982868547586886 at pos 12 of 19
+Adding data for series: 1648707475665510337 at pos 13 of 19
+Adding data for series: 1653156241306617971 at pos 14 of 19
+Adding data for series: 1653202513100375449 at pos 15 of 19
+Adding data for series: 1653411154822072576 at pos 16 of 19
+Adding data for series: 1657051358688741757 at pos 17 of 19
+Adding data for series: 1660715089822097662 at pos 18 of 19
+Adding data for series: 1665686797377169161 at pos 19 of 19
+Adding data for company: 1549796195924042195 at pos 3 of 6
+Adding data for series: 1550079452778047273 at pos 1 of 80
+Adding data for series: 1550079533224173673 at pos 2 of 80
+Adding data for series: 1554916122332929760 at pos 3 of 80
+Adding data for series: 1557299052834611065 at pos 4 of 80
+Adding data for series: 1557307209407649453 at pos 5 of 80
+Adding data for series: 1557310618297140373 at pos 6 of 80
+Adding data for series: 1557311531171818164 at pos 7 of 80
+Adding data for series: 1557312165015675189 at pos 8 of 80
+Adding data for series: 1557312915204424147 at pos 9 of 80
+Adding data for series: 1557328547906654002 at pos 10 of 80
+Adding data for series: 1557332503491520501 at pos 11 of 80
+Adding data for series: 1557332779044526166 at pos 12 of 80
+Adding data for series: 1557334501086765509 at pos 13 of 80
+Adding data for series: 1557337028119406495 at pos 14 of 80
+Adding data for series: 1557339648147794154 at pos 15 of 80
+Adding data for series: 1559585754067566411 at pos 16 of 80
+Adding data for series: 1560266560603314845 at pos 17 of 80
+Adding data for series: 1560266660773919471 at pos 18 of 80
+Adding data for series: 1560266754133662407 at pos 19 of 80
+Adding data for series: 1563159729521940625 at pos 20 of 80
+Adding data for series: 1565009462112478135 at pos 21 of 80
+Adding data for series: 1565043569275379335 at pos 22 of 80
+Adding data for series: 1567880470846507630 at pos 23 of 80
+Adding data for series: 1567881667641490501 at pos 24 of 80
+Adding data for series: 1567882845789148554 at pos 25 of 80
+Adding data for series: 1568257844309802059 at pos 26 of 80
+Adding data for series: 1572989077807090484 at pos 27 of 80
+Adding data for series: 1577693953223472657 at pos 28 of 80
+Adding data for series: 1584978611725033008 at pos 29 of 80
+Adding data for series: 1588539172949530349 at pos 30 of 80
+Adding data for series: 1588554967850752093 at pos 31 of 80
+Adding data for series: 1589355588716800545 at pos 32 of 80
+Adding data for series: 1592248562725120794 at pos 33 of 80
+Adding data for series: 1592571466691491822 at pos 34 of 80
+Adding data for series: 1592996225443337054 at pos 35 of 80
+Adding data for series: 1593244149987571771 at pos 36 of 80
+Adding data for series: 1593318791174878340 at pos 37 of 80
+Adding data for series: 1598027228757184161 at pos 38 of 80
+Adding data for series: 1598775422898252129 at pos 39 of 80
+Adding data for series: 1599809950297658537 at pos 40 of 80
+Adding data for series: 1603068683778343561 at pos 41 of 80
+Adding data for series: 1603842453630589273 at pos 42 of 80
+Adding data for series: 1603850743333597249 at pos 43 of 80
+Adding data for series: 1604837819197011782 at pos 44 of 80
+Adding data for series: 1610366519168258000 at pos 45 of 80
+Adding data for series: 1613169937000854243 at pos 46 of 80
+Adding data for series: 1622601337204537202 at pos 47 of 80
+Adding data for series: 1623364345293870624 at pos 48 of 80
+Adding data for series: 1623432153253395216 at pos 49 of 80
+Adding data for series: 1623432395287194045 at pos 50 of 80
+Adding data for series: 1623432886622889622 at pos 51 of 80
+Adding data for series: 1623433282840645498 at pos 52 of 80
+Adding data for series: 1624055894982498964 at pos 53 of 80
+Adding data for series: 1625494428526166902 at pos 54 of 80
+Adding data for series: 1625905183218367060 at pos 55 of 80
+Adding data for series: 1627759858461232204 at pos 56 of 80
+Adding data for series: 1628451051087217283 at pos 57 of 80
+Adding data for series: 1630300046916552014 at pos 58 of 80
+Adding data for series: 1631299349171078808 at pos 59 of 80
+Adding data for series: 1631697658087130033 at pos 60 of 80
+Adding data for series: 1635674288313216371 at pos 61 of 80
+Adding data for series: 1635725029997265103 at pos 62 of 80
+Adding data for series: 1636102203833136593 at pos 63 of 80
+Adding data for series: 1641885129893907040 at pos 64 of 80
+Adding data for series: 1643645676036341474 at pos 65 of 80
+Adding data for series: 1644004156488260843 at pos 66 of 80
+Adding data for series: 1646519043171281142 at pos 67 of 80
+Adding data for series: 1647746707846165440 at pos 68 of 80
+Adding data for series: 1648370561434940208 at pos 69 of 80
+Adding data for series: 1648468440067203957 at pos 70 of 80
+Adding data for series: 1648663442582911160 at pos 71 of 80
+Adding data for series: 1648663526142483697 at pos 72 of 80
+Adding data for series: 1648663594964691461 at pos 73 of 80
+Adding data for series: 1653473818489442408 at pos 74 of 80
+Adding data for series: 1656015283198483564 at pos 75 of 80
+Adding data for series: 1658852881829776931 at pos 76 of 80
+Adding data for series: 1658909622758390166 at pos 77 of 80
+Adding data for series: 1661039847452626064 at pos 78 of 80
+Adding data for series: 1664033019557991018 at pos 79 of 80
+Adding data for series: 1664730453425446151 at pos 80 of 80
+Adding data for company: 1516077729180613438 at pos 4 of 6
+Adding data for series: 1524404839692077423 at pos 1 of 27
+Adding data for series: 1524404902911727334 at pos 2 of 27
+Adding data for series: 1536733394684794029 at pos 3 of 27
+Adding data for series: 1537084234317798601 at pos 4 of 27
+Adding data for series: 1539700656126171723 at pos 5 of 27
+Adding data for series: 1561694488096492227 at pos 6 of 27
+Adding data for series: 1561715618113631817 at pos 7 of 27
+Adding data for series: 1561815772988565449 at pos 8 of 27
+Adding data for series: 1561815950673634990 at pos 9 of 27
+Adding data for series: 1562163221655546081 at pos 10 of 27
+Adding data for series: 1563211034034108247 at pos 11 of 27
+Adding data for series: 1565317617031450995 at pos 12 of 27
+Adding data for series: 1567231951603767892 at pos 13 of 27
+Adding data for series: 1567949763230807060 at pos 14 of 27
+Adding data for series: 1573018387940324168 at pos 15 of 27
+Adding data for series: 1575196357689627544 at pos 16 of 27
+Adding data for series: 1580602380200925893 at pos 17 of 27
+Adding data for series: 1589724206588824894 at pos 18 of 27
+Adding data for series: 1590052350210939192 at pos 19 of 27
+Adding data for series: 1590729484030557750 at pos 20 of 27
+Adding data for series: 1598668215391241007 at pos 21 of 27
+Adding data for series: 1604910711425965571 at pos 22 of 27
+Adding data for series: 1613606046271664034 at pos 23 of 27
+Adding data for series: 1624124356399528273 at pos 24 of 27
+Adding data for series: 1638259102969380249 at pos 25 of 27
+Adding data for series: 1638871793129442112 at pos 26 of 27
+Adding data for series: 1655929665795490712 at pos 27 of 27
+Adding data for company: 1461325566668412576 at pos 5 of 6
+Adding data for series: 1461611544636194803 at pos 1 of 38
+Adding data for series: 1461621976297354604 at pos 2 of 38
+Adding data for series: 1461626490710523051 at pos 3 of 38
+Adding data for series: 1462739164506023229 at pos 4 of 38
+Adding data for series: 1463026502009769317 at pos 5 of 38
+Adding data for series: 1515378691741225087 at pos 6 of 38
+Adding data for series: 1527210799091167818 at pos 7 of 38
+Adding data for series: 1530104826650640224 at pos 8 of 38
+Adding data for series: 1530110991552854948 at pos 9 of 38
+Adding data for series: 1530112331325552852 at pos 10 of 38
+Adding data for series: 1534101850742230169 at pos 11 of 38
+Adding data for series: 1534109248647896861 at pos 12 of 38
+Adding data for series: 1536634523921214475 at pos 13 of 38
+Adding data for series: 1536698034515055317 at pos 14 of 38
+Adding data for series: 1536698038490660697 at pos 15 of 38
+Adding data for series: 1536698039608545179 at pos 16 of 38
+Adding data for series: 1536698040770434920 at pos 17 of 38
+Adding data for series: 1536698041979142434 at pos 18 of 38
+Adding data for series: 1536698043231128235 at pos 19 of 38
+Adding data for series: 1541680742983881023 at pos 20 of 38
+Adding data for series: 1542449102063006181 at pos 21 of 38
+Adding data for series: 1545217121989238420 at pos 22 of 38
+Adding data for series: 1545217276481493355 at pos 23 of 38
+Adding data for series: 1546838723491609348 at pos 24 of 38
+Adding data for series: 1547034059186825626 at pos 25 of 38
+Adding data for series: 1547046128582940832 at pos 26 of 38
+Adding data for series: 1547058866393460115 at pos 27 of 38
+Adding data for series: 1571454835340316151 at pos 28 of 38
+Adding data for series: 1581504142487435648 at pos 29 of 38
+Adding data for series: 1590577063798024646 at pos 30 of 38
+Adding data for series: 1590612673941785657 at pos 31 of 38
+Adding data for series: 1590615762718402576 at pos 32 of 38
+Adding data for series: 1608514640783482851 at pos 33 of 38
+Adding data for series: 1615933502261148559 at pos 34 of 38
+Adding data for series: 1628274582313559288 at pos 35 of 38
+Adding data for series: 1628620686350893449 at pos 36 of 38
+Adding data for series: 1629662766996460257 at pos 37 of 38
+Adding data for series: 1658344434626775024 at pos 38 of 38
+Adding data for company: 1461315463744141859 at pos 6 of 6
+Adding data for series: 1466479371507025338 at pos 1 of 29
+Adding data for series: 1468677120861937000 at pos 2 of 29
+Adding data for series: 1483896491781723443 at pos 3 of 29
+Adding data for series: 1486081336784153691 at pos 4 of 29
+Adding data for series: 1486081644103558434 at pos 5 of 29
+Adding data for series: 1501662257265926976 at pos 6 of 29
+Adding data for series: 1502290801574633684 at pos 7 of 29
+Adding data for series: 1502303333242915697 at pos 8 of 29
+Adding data for series: 1511409077303840530 at pos 9 of 29
+Adding data for series: 1513952309551910655 at pos 10 of 29
+Adding data for series: 1521953517812559958 at pos 11 of 29
+Adding data for series: 1532093509515866752 at pos 12 of 29
+Adding data for series: 1544762422708307843 at pos 13 of 29
+Adding data for series: 1546935644602892357 at pos 14 of 29
+Adding data for series: 1554899419498577312 at pos 15 of 29
+Adding data for series: 1557369518573525179 at pos 16 of 29
+Adding data for series: 1562505595946911035 at pos 17 of 29
+Adding data for series: 1563265719970147402 at pos 18 of 29
+Adding data for series: 1567672733266469378 at pos 19 of 29
+Adding data for series: 1569769623513738894 at pos 20 of 29
+Adding data for series: 1575841488392845746 at pos 21 of 29
+Adding data for series: 1575850649788038236 at pos 22 of 29
+Adding data for series: 1575863531676252434 at pos 23 of 29
+Adding data for series: 1575938504926824150 at pos 24 of 29
+Adding data for series: 1597999615021127050 at pos 25 of 29
+Adding data for series: 1607784748072424054 at pos 26 of 29
+Adding data for series: 1620818334200453941 at pos 27 of 29
+Adding data for series: 1649404351049623019 at pos 28 of 29
+Adding data for series: 1654150453632802939 at pos 29 of 29
+####################################################################################################
+
+
